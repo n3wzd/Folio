@@ -1,0 +1,53 @@
+.project-container {
+    padding: 50px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: left;
+  }
+  
+  .project-demo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .project-demo img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .problem-definition,
+  .solution-description,
+  .project-result,
+  .explanation-section {
+    margin-bottom: 40px;
+  }
+  
+  h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .explanation {
+    margin-bottom: 20px;
+  }
+  
+  pre {
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+  }
+  
+  .explanation-section h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  
+  p, pre {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  

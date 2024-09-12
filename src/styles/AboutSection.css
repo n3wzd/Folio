@@ -1,0 +1,168 @@
+.about-section {
+  position: relative;
+  padding: 50px;
+  background: linear-gradient(135deg, #fff0a2, #ffb0a2);
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left-column {
+  width: 45%;
+  padding: 20px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 5%;
+  background: linear-gradient(135deg, #4a5d81, #6a7f9a);
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  margin: 20px auto;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #ffb0a2;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+}
+
+.profile-name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 20px
+}
+
+.profile-bio {
+  font-size: 1rem;
+  color: #DDD;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.skills-section {
+  margin-top: 30px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill-bar {
+  background-color: #ddd;
+  border-radius: 5px;
+  width: 100%;
+  height: 20px;
+  margin-top: 5px;
+}
+
+.skill-level {
+  height: 100%;
+  border-radius: 5px;
+}
+
+.skill-level.react {
+  width: 90%;
+  background-color: #61dafb;
+}
+
+.skill-level.javascript {
+  width: 80%;
+  background-color: #f7df1e;
+}
+
+.skill-level.css {
+  width: 70%;
+  background-color: #264de4;
+}
+
+.right-column {
+  width: 45%;
+  padding: 20px;
+}
+
+.strengths {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.strength {
+  margin-bottom: 20px;
+}
+
+.strength h4 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.strength p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.animated-background {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.animated-structure {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  animation: moveStructure 10s infinite alternate;
+}
+
+@keyframes moveStructure {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px) rotate(20deg);
+  }
+}
