@@ -6,10 +6,10 @@ import ContactSection from './pages/ContactSection.js';
 function App() {
   return (
     <div className="App">
-      <HeroSection></HeroSection>
-      <AboutSection></AboutSection>
-      <ProjectSection></ProjectSection>
-      <ContactSection></ContactSection>
+      <HeroSection/>
+      <AboutSection/>
+      <ProjectSection/>
+      <ContactSection/>
     </div>
   );
 }

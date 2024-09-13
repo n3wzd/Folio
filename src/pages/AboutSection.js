@@ -1,5 +1,6 @@
 import React from "react";
 import Profile from "../components/Profile.js";
+import Platformer from "../components/Platformer.js";
 import "../styles/AboutSection.css";
 
 const AboutSection = () => {
@@ -21,52 +22,30 @@ const AboutSection = () => {
             </div>
           </div>
           <div className="skills-section">
-            <h3>Technical Skills</h3>
+            <h3 className="skill-title">Skills</h3>
             <div className="skill">
-              <span>React</span>
+              <div className="skill-name">React</div>
               <div className="skill-bar">
-                <div className="skill-level react"></div>
+                <div className="skill-bar-fill"></div>
               </div>
             </div>
             <div className="skill">
-              <span>JavaScript</span>
+              <div className="skill-name">Javascript</div>
               <div className="skill-bar">
-                <div className="skill-level javascript"></div>
+                <div className="skill-bar-fill"></div>
               </div>
             </div>
             <div className="skill">
-              <span>CSS</span>
+              <div className="skill-name">CSS</div>
               <div className="skill-bar">
-                <div className="skill-level css"></div>
+                <div className="skill-bar-fill"></div>
               </div>
             </div>
           </div>
         </div>
-
         <div className="right-column">
-          <div className="strengths">
-            <div className="strength">
-              <h4>Creative</h4>
-              <p>Bringing innovative ideas into reality with modern design principles.</p>
-            </div>
-            <div className="strength">
-              <h4>Problem Solver</h4>
-              <p>Passionate about solving challenging problems with effective solutions.</p>
-            </div>
-            <div className="strength">
-              <h4>Team Player</h4>
-              <p>Enjoy working with diverse teams to achieve shared goals.</p>
-            </div>
-            <div className="strength">
-              <h4>Adaptable</h4>
-              <p>Quick to learn and adapt to new environments and technologies.</p>
-            </div>
-          </div>
+          <Platformer></Platformer>
         </div>
-      </div>
-
-      <div className="animated-background">
-        <div className="animated-structure"></div>
       </div>
     </section>
   );
