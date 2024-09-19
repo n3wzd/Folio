@@ -1,8 +1,10 @@
+@import './Color.css';
+
 .about-section {
   position: relative;
   padding: 50px;
   background: linear-gradient(45deg, #ffffff, #f5f5f5);
-  color: #333;
+  color: var(--text-color);
   font-family: 'Arial', sans-serif;
   height: 100vh;
 }
@@ -11,7 +13,7 @@
   text-align: center;
   font-size: 3rem;
   margin-bottom: 50px;
-  color: #333;
+  color: var(--text-color);
 }
 
 .about-content {
@@ -25,114 +27,7 @@
   padding: 20px;
 }
 
-.profile-section {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 20px;
-  color: #333;
-  border-radius: 10px;
-  margin: 20px auto;
-  margin-bottom: 50px;
-}
-
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  object-fit: cover;
-  margin-right: 30px;
-}
-
-.profile-details {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 15px
-}
-
-.profile-name {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 20px 0
-}
-
-.profile-bio {
-  font-size: 1rem;
-  color: #555;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-.intro-text {
-  font-size: 1.2rem;
-  margin: 20px 0;
-}
-
-.skill-section {
-  margin-top: 20px;
-}
-
-.skill-title {
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 30px;
-}
-
-.skill {
-  display: flex;
-  align-items: center;
-  margin-bottom: 25px;
-}
-
-.skill-name {
-  width: 120px;
-  font-weight: bold;
-  color: #333;
-}
-
-.skill-bar {
-  flex: 1;
-  background: rgb(230, 236, 238);
-  border-radius: 5px;
-  height: 20px;
-  margin-left: 10px;
-  position: relative;
-}
-
-.skill-bar-fill {
-  height: 100%;
-  width: 70%;
-  background: linear-gradient(135deg, #00aaff, #8dd9ff);
-  border-radius: 5px;
-  transition: width 0.3s ease;
-}
-
 .right-column {
   width: 45%;
   padding: 20px;
-}
-
-.strengths {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 100%;
-}
-
-.strength {
-  margin-bottom: 20px;
-}
-
-.strength h4 {
-  font-size: 1.5rem;
-  color: #333;
-}
-
-.strength p {
-  font-size: 1.1rem;
-  color: #555;
 }

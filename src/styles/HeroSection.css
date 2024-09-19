@@ -1,35 +1,41 @@
+@import './Color.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
 .hero-container {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: linear-gradient(135deg, #fff0a2, #ffb0a2);
-    background-size: cover;
-    background-position: center;
-    color: white;
-  }
-  
-  .hero-content h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  .btn-primary {
-    background-color: #007bff;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-  }
-  
-  .btn-primary:hover {
-    background-color: #0056b3;
-  }
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, var(--background1-color), var(--background2-color));
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+}

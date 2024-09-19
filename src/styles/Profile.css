@@ -1,3 +1,41 @@
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    color: #333;
+    border-radius: 10px;
+    margin: 20px auto;
+    margin-bottom: 50px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px
+}
+
+.profile-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0
+}
+
+.profile-bio {
+    font-size: 1rem;
+    color: #555;
+}
+
 .head {
     width: 150px;
     height: 150px;
