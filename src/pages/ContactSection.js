@@ -5,7 +5,7 @@ const ContactSection = () => {
   return (
     <div className="contact-container">
       <h2>Contact Me</h2>
-      <p>Thank you for visiting my portfolio! If you'd like to get in touch, feel free to send me a message or connect with me on social media.</p>
+      <p>협업이나 프로젝트 관련 문의는 언제든지 연락해 주세요. 함께 새로운 가능성을 만들어가고 싶습니다.</p>
       
       <form className="contact-form">
         <input type="text" placeholder="Your Name" required />

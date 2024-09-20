@@ -8,11 +8,18 @@ function makeItem(name, gauge) {
 
 const SkillMenu = () => {
   const items = [
-    makeItem("Flutter", 0.8),
+    makeItem("Flutter", 0.75),
+    makeItem("Dart", 0.75),
+    makeItem("Javascript", 0.75),
+    makeItem("Node.js", 0.75),
+    makeItem("Express", 0.75),
     makeItem("React", 0.6),
-    makeItem("CSS", 0.5),
-    makeItem("Javascript", 0.5),
+    makeItem("HTML", 0.6),
+    makeItem("CSS", 0.6),
+    makeItem("C++", 0.5),
     makeItem("Python", 0.5),
+    makeItem("SQL", 0.5),
+    makeItem("MySQL", 0.5),
   ]
 
   return (
