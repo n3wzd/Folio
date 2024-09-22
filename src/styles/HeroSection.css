@@ -13,7 +13,7 @@ html {
   background: linear-gradient(135deg, var(--background1-color), var(--background2-color));
   background-size: cover;
   background-position: center;
-  color: white;
+  color: var(--text-color);
 }
 
 .hero-content h1 {
@@ -27,7 +27,7 @@ html {
 }
 
 .btn-primary {
-  background-color: var(--primary-color);;
+  background-color: var(--primary-color);
   padding: 10px 20px;
   color: white;
   text-decoration: none;

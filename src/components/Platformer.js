@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import Tile from "./Tile.js"
 import "../styles/Platformer.css";
 
@@ -28,21 +28,9 @@ const Platformer = () => {
     makeCube(0, 4, 0),
   ]
   const sceneContainerRef = useRef(null);
-  const [rotation, setRotation] = useState({ x: 0, y: 0 });
-
-  const handleMouseMove = (e) => {
-    const { clientX, clientY } = e;
-    const centerX = window.innerWidth / 2;
-    const centerY = window.innerHeight / 2;
-    const rotateX = (clientX - centerX) / 20;
-    const rotateY = (clientY - centerY) / 20;
-
-    setRotation({ x: rotateX, y: rotateY });
-  };
 
   useEffect(() => {
-    window.addEventListener('mousemove', handleMouseMove);
-
+    const sceneContainer = sceneContainerRef.current;
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -51,31 +39,25 @@ const Platformer = () => {
           entry.target.classList.remove('animate');
         }
       });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.1 });
 
-    if (sceneContainerRef.current) {
-      observer.observe(sceneContainerRef.current);
+    if (sceneContainer) {
+      observer.observe(sceneContainer);
     }
 
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      if (sceneContainerRef.current) {
-        observer.unobserve(sceneContainerRef.current);
+      if (sceneContainer) {
+        observer.unobserve(sceneContainer);
       }
     };
   }, []);
 
   return (
     <div className="scene-appear-animation" ref={sceneContainerRef}>
-      <div className="scene-rotation-animation" style={{
-          transformStyle: "preserve-3d",
-          transform: `rotateY(${rotation.x}deg)`,
-        }}>
-        <div className="scene">
-          {cubes.map((position, index) => (
-            <Tile key={index} x={position.x} y={position.y} z={position.z} />
-          ))}
-        </div>
+      <div className="scene">
+        {cubes.map((position, index) => (
+          <Tile key={index} x={position.x} y={position.y} z={position.z} />
+        ))}
       </div>
     </div>
   );

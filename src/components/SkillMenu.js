@@ -8,11 +8,11 @@ function makeItem(name, gauge) {
 
 const SkillMenu = () => {
   const items = [
-    makeItem("Flutter", 0.75),
-    makeItem("Dart", 0.75),
-    makeItem("Javascript", 0.75),
-    makeItem("Node.js", 0.75),
-    makeItem("Express", 0.75),
+    makeItem("Flutter", 0.7),
+    makeItem("Dart", 0.7),
+    makeItem("Javascript", 0.7),
+    makeItem("Node.js", 0.7),
+    makeItem("Express", 0.7),
     makeItem("React", 0.6),
     makeItem("HTML", 0.6),
     makeItem("CSS", 0.6),
@@ -24,7 +24,7 @@ const SkillMenu = () => {
 
   return (
     <div className="skills-section">
-        <h3 className="skill-title">Skills</h3>
+        <h2 className="skill-title">Skills</h2>
         {items.map((target, index) => (
           <SkillBar key={index} name={target.name} gauge={target.gauge} />
         ))}

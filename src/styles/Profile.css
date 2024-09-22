@@ -1,12 +1,13 @@
+@import './Color.css';
+
 .profile-section {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 20px;
-    color: #333;
-    border-radius: 10px;
+    padding: 10px;
+    color: var(--text-color);
     margin: 20px auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .profile-pic {

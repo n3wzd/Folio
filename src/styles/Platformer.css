@@ -1,6 +1,8 @@
 @import './Color.css';
 
 .scene-appear-animation {
+  transform-style: preserve-3d;
+  height: 70vh;
   opacity: 0;
 }
 
@@ -12,7 +14,8 @@
   left: 30%;
   position: relative;
   transform-style: preserve-3d;
-  transform: rotateX(-20deg) rotateY(45deg);
+  transform: rotateX(-20deg) rotateY(30deg);
+  perspective: 3000px;
 }
 
 .cube {
@@ -69,11 +72,11 @@
 
 @keyframes appearPlatformer {
   0% {
-    transform: translateY(-50px);
+    transform: translateY(-50px) rotateY(45deg);
     opacity: 0;
   }
   100% {
-    transform: translateY(0px);
+    transform: translateY(0px) rotateY(0deg);
     opacity: 1;
   }
 }
