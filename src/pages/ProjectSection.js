@@ -1,12 +1,19 @@
 import React, { useState } from 'react';
+import ProjectItem from "../components/ProjectItem.js";
+import ArrowButton from "../components/ArrowButton.js";
 import "../styles/ProjectSection.css";
 
 function makeItem(name, title, description) {
   return {name: name, title: title, description: description};
 }
 
+function makePageData(prev, cur) {
+  return {cur: cur, prev: prev};
+}
+
 const ProjectSection = () => {
-  const [selectedProject, setSelectedProject] = useState(0);
+  const [pageData, setPageData] = useState(makePageData(0, 0));
+  const [animate, setAnimate] = useState(false);
 
   const projects = [
     makeItem(
@@ -37,34 +44,29 @@ const ProjectSection = () => {
   ];
 
   const handleButtonClick = (index) => {
-    setSelectedProject(index);
+    if(index !== pageData.cur) {
+      setPageData(makePageData(pageData.cur, index));
+      setAnimate(false);
+      setTimeout(() => setAnimate(true), 0);
+    }
   };
 
   return (
     <div  className="project-section">
       <h1 className="project-title">Project</h1>
-      <div className="project-menu-section">
-        <div className="project-menu-left">
-          <img src={`/${projects[selectedProject].name}.jpg`} alt="Project Thumbnail" />
+        <div className="project-menu-container">
+          <ArrowButton direction="left" onClick={() => {}} />
+          <div className={`project-menu-section fade-out ${animate ? "animate" : ""}`}>
+            <ProjectItem projectData={projects[pageData.prev]} />
+          </div>
+          <div className={`project-menu-section fade-in ${animate ? "animate" : ""}`}>
+            <ProjectItem projectData={projects[pageData.cur]} />
+          </div>
+          <ArrowButton direction="right" onClick={() => {}} />
         </div>
-        <div className="project-menu-right">
-          <div className="project-name">
-            <h2>{projects[selectedProject].title}</h2>
-          </div>
-          <div className="project-image-grid">
-            <img src={`/${projects[selectedProject].name}.jpg`} alt="Project Test 1" />
-            <img src={`/${projects[selectedProject].name}.jpg`} alt="Project Test 2" />
-            <img src={`/${projects[selectedProject].name}.jpg`} alt="Project Test 3" />
-            <img src={`/${projects[selectedProject].name}.jpg`} alt="Project Test 4" />
-          </div>
-          <div className="project-description">
-            <p>{projects[selectedProject].description}</p>
-          </div>
-        </div>
-      </div>
       <div className="navigation-buttons">
         {projects.map((project, index) => (
-          <button key={index} onClick={() => handleButtonClick(index)}/>
+          <button key={index} onClick={() => handleButtonClick(index)} className={index === pageData.cur ? "selected" : ""}/>
         ))}
       </div>
     </div>

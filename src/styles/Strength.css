@@ -1,0 +1,28 @@
+.strength {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    margin: 0 20px;
+    opacity: 0;
+}
+
+.strength-text {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.strength.animate {
+    animation: appearStrength 1s ease-out forwards;
+}
+
+@keyframes appearStrength {
+    0% {
+      transform: translateY(-150px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+}

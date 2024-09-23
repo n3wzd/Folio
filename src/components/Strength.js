@@ -1,10 +1,12 @@
 import React, { useRef, useEffect } from "react";
 import Treasure from "../components/Treasure.js";
+import "../styles/Strength.css";
 
 const Strength = ({ title, text }) => {
   const strengthRef = useRef(null);
 
   useEffect(() => {
+    const strength = strengthRef.current;
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -15,13 +17,13 @@ const Strength = ({ title, text }) => {
       });
     }, { threshold: 0.1 });
 
-    if (strengthRef.current) {
-      observer.observe(strengthRef.current);
+    if (strength) {
+      observer.observe(strength);
     }
 
     return () => {
-      if (strengthRef.current) {
-        observer.unobserve(strengthRef.current);
+      if (strength) {
+        observer.unobserve(strength);
       }
     };
   }, []);
