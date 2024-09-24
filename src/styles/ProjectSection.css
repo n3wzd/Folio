@@ -1,3 +1,5 @@
+@import './Color.css';
+
 .project-section {
   position: relative;
   padding: 20px 120px;
@@ -24,6 +26,7 @@
   justify-content: space-between;
   align-items: center;
   height: 75vh;
+  margin: 10px;
 }
 
 .project-menu-section {
@@ -38,6 +41,7 @@
 
 .project-menu-section.fade-in {
   z-index: 1;
+  opacity: 1;
 }
 
 .project-menu-section.fade-in.animate {
@@ -46,6 +50,7 @@
 
 .project-menu-section.fade-out {
   z-index: 0;
+  opacity: 0;
 }
 
 .project-menu-section.fade-out.animate {
@@ -60,7 +65,6 @@
 
 .project-menu-left img {
   width: 100%;
-  height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }

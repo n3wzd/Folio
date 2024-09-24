@@ -3,7 +3,7 @@ import "../styles/ArrowButton.css";
 
 const ArrowButton = ({direction, onClick}) => {
   return (
-    <button className="vertical-arrow-button" onClick={onClick}>
+    <button className="arrow-button" onClick={onClick}>
         <span className={`arrow-${direction}`}></span>
     </button>
   );

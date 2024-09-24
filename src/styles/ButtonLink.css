@@ -1,0 +1,17 @@
+@import './Color.css';
+
+.button-link {
+    background-color: var(--primary-color);
+    padding: 8px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+  }
+  
+.button-link:hover {
+    background-color: var(--secondary-color);
+}

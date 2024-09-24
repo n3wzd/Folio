@@ -1,0 +1,72 @@
+.image-slide-container {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+}
+
+.image-slide-menu {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-slide-menu img {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+.image-slide-menu img.prev-left-animate {
+    animation: slideCenterToLeft 0.7s ease-out forwards;
+}
+
+.image-slide-menu img.cur-left-animate {
+    animation: slideRightToCenter 0.7s ease-out forwards;
+}
+
+.image-slide-menu img.prev-right-animate {
+    animation: slideCenterToRight 0.7s ease-out forwards;
+}
+
+.image-slide-menu img.cur-right-animate {
+    animation: slideLeftToCenter 0.7s ease-out forwards;
+}
+
+@keyframes slideCenterToLeft {
+    from {
+        left: -100%;
+    }
+    to {
+        left: -200%;
+    }
+}
+
+@keyframes slideRightToCenter {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0%;
+    }
+}
+
+@keyframes slideCenterToRight {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0%;
+    }
+}
+
+@keyframes slideLeftToCenter {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0%;
+    }
+}

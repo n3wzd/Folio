@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/ProjectSection.css";
 
-const ProjectItem = ({projectData}) => {
+const ProjectItem = ({projectData, onClick}) => {
   return (
     <>
-        <div className="project-menu-left">
+        <div className="project-menu-left" onClick={onClick}>
           <img src={`/${projectData.name}.jpg`} alt="Project Thumbnail" />
         </div>
         <div className="project-menu-right">
