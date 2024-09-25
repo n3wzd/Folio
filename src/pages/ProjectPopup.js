@@ -9,7 +9,7 @@ const ProjectPopup = ({ projectData, closePopup }) => {
         <div className="popup-overlay" onClick={closePopup}></div>
         <div className="popup">
             <span className="close-btn" onClick={closePopup}>×</span>
-            <ImageSlideMenu imgList={[`/test1.jpg`, `/test2.jpg`, `/test3.jpg`]} />
+            <ImageSlideMenu imgList={projectData.imgList} />
             <h2>{projectData.title}</h2>
             <p>{projectData.description}</p>
             <hr/>
