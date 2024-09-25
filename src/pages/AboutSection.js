@@ -8,7 +8,7 @@ import "../styles/AboutSection.css";
 const AboutSection = () => {
   return (
     <section id="about-section" className="about-section">
-      <h1 className="about-title">About Me</h1>
+      <h2 className="about-title">About Me</h2>
       <div className="about-content">
         <div className="left-column">
           <Profile></Profile>

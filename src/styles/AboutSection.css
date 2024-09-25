@@ -3,10 +3,10 @@
 .about-section {
   position: relative;
   padding: 20px 50px;
-  background: linear-gradient(45deg, #ffffff, #f5f5f5);
+  margin-top: 40px;
   color: var(--text-color);
   font-family: 'Arial', sans-serif;
-  height: 120vh;
+  height: 130vh;
 }
 
 .about-title {

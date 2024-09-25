@@ -9,7 +9,7 @@ const ProjectItem = ({projectData, onClick}) => {
         </div>
         <div className="project-menu-right">
           <div className="project-name">
-            <h2>{projectData.title}</h2>
+            <h3>{projectData.title}</h3>
           </div>
           <div className="project-image-grid">
             <img src={`/${projectData.name}.jpg`} alt="Project Test 1" />

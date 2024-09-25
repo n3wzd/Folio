@@ -10,7 +10,7 @@ const ProjectPopup = ({ projectData, closePopup }) => {
         <div className="popup">
             <span className="close-btn" onClick={closePopup}>×</span>
             <ImageSlideMenu imgList={[`/test1.jpg`, `/test2.jpg`, `/test3.jpg`]} />
-            <h1>{projectData.title}</h1>
+            <h2>{projectData.title}</h2>
             <p>{projectData.description}</p>
             <hr/>
             <p style={{ marginBottom: "24px" }}>{projectData.text}</p>

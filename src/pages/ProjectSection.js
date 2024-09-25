@@ -60,7 +60,7 @@ const ProjectSection = () => {
   return (
     <>
       <div  className="project-section">
-        <h1 className="project-title">Project</h1>
+        <h2 className="project-title">Project</h2>
           <div className="project-menu-container">
             <ArrowButton direction="left" onClick={() => handleButtonClick((pageData.cur - 1 + projects.length) % projects.length)} />
             <div className={`project-menu-section fade-out ${animate ? "animate" : ""}`}>
