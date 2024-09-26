@@ -1,12 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "../styles/ProjectSection.css";
 
 const ProjectItem = ({projectData, onClick}) => {
-  const videoRef = useRef(null);
-
   return (
     <>
-        <div className="project-menu-left" onClick={onClick} ref={videoRef}>
+        <div className="project-menu-left" onClick={onClick}>
           <video src={`/${projectData.video}`} autoPlay={true} muted={true} loop={true}/> 
         </div>
         <div className="project-menu-right">

@@ -32,7 +32,7 @@ const Strength = ({ title, text }) => {
     <div className="strength" ref={strengthRef}>
         <Treasure></Treasure>
         <h3>{ title }</h3>
-        <div>{ text }</div>
+        <div className="strength-text">{ text }</div>
     </div>
   );
 };
