@@ -2,11 +2,10 @@
 
 .about-section {
   position: relative;
-  padding: 20px 50px;
-  margin-top: 40px;
+  padding: 20px 0;
   color: var(--text-color);
   font-family: 'Arial', sans-serif;
-  height: 130vh;
+  height: 100vh;
 }
 
 .about-title {

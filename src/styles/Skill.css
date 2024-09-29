@@ -2,7 +2,7 @@
 
 .skill-title {
     font-weight: bold;
-    color: #333;
+    color: var(--text-color);
     margin-bottom: 30px;
 }
 
@@ -15,7 +15,7 @@
 .skill-name {
     width: 120px;
     font-weight: bold;
-    color: #333;
+    color: var(--text-color);
 }
 
 .skill-bar {

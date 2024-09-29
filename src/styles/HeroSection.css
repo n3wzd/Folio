@@ -1,19 +1,32 @@
 @import './Color.css';
 
 html {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
   scroll-behavior: smooth;
+  background-color: #111;
 }
 
 .hero-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   height: 100vh;
+}
+
+.hero-container-item {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(135deg, var(--background1-color), var(--background2-color));
-  background-size: cover;
-  background-position: center;
-  color: var(--text-color);
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
 }
 
 .hero-content h1 {

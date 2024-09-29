@@ -1,6 +1,5 @@
 import React from "react";
 import Profile from "../components/Profile.js";
-import Platformer from "../components/Platformer.js";
 import StrengthMenu from "../components/StrengthMenu.js";
 import SkillMenu from "../components/SkillMenu.js";
 import "../styles/AboutSection.css";
@@ -16,7 +15,6 @@ const AboutSection = () => {
         </div>
         <div className="right-column">
           <StrengthMenu></StrengthMenu>
-          <Platformer></Platformer>
         </div>
       </div>
     </section>

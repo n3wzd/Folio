@@ -2,10 +2,10 @@
 
 .project-section {
   position: relative;
-  padding: 20px 120px;
+  padding: 20px 60px;
   color: var(--text-color);
   font-family: 'Arial', sans-serif;
-  margin-bottom: 100px;
+  height: 100vh;
 }
 
 .project-title {
@@ -19,7 +19,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid var(--primary-color);
   border-radius: 15px;
 }
 

@@ -13,10 +13,9 @@
 .profile-pic {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     object-fit: cover;
-    margin-right: 30px;
+    margin-left: 20px;
+    margin-right: 50px;
 }
 
 .profile-details {
@@ -34,54 +33,5 @@
 
 .profile-bio {
     font-size: 1rem;
-    color: #555;
-}
-
-.head {
-    width: 150px;
-    height: 150px;
-    background-color: #ffdbac;
-    border-radius: 50%;
-    position: relative;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-}
-
-.eye {
-    width: 20px;
-    height: 20px;
-    background-color: #333;
-    border-radius: 50%;
-    position: absolute;
-    top: 40%;
-}
-
-.left-eye {
-    left: 35px;
-}
-
-.right-eye {
-    right: 35px;
-}
-
-.nose {
-    width: 10px;
-    height: 30px;
-    background-color: #f5b895;
-    border-radius: 10px / 15px;
-    position: absolute;
-    top: 55px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.mouth {
-    width: 60px;
-    height: 30px;
-    border-radius: 0 0 30px 30px;
-    background-color: #f08080;
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
+    color: var(--text-color);
 }

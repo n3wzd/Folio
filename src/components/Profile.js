@@ -1,12 +1,12 @@
 import React from "react";
-import ProfilePicture from "../components/ProfilePicture.js";
+import Cube from "../components/Cube.js";
 import "../styles/Profile.css";
 
 const Profile = () => {
   return (
     <div className="profile-section">
         <div className="profile-pic">
-            <ProfilePicture></ProfilePicture>
+            <Cube></Cube>
         </div>
         <div className="profile-details">
             <div className="profile-name">Testman</div>
