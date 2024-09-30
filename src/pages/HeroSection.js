@@ -1,13 +1,13 @@
 import React from "react";
 import ButtonLink from  "../components/ButtonLink.js";
-import ParticleBackground from "../components/ParticleBackground.js";
+import WaveBackground from "../components/WaveBackground.js";
 import "../styles/HeroSection.css";
 
 const HeroSection = () => {
   return (
-    <div className="hero-container">
+    <section id="hero-section" className="hero-container">
       <div className="hero-container-item" style={{ zIndex: -1 }}>
-        <ParticleBackground/>
+        <WaveBackground/>
       </div>
       <div className="hero-container-item">
         <div className="hero-content">
@@ -16,7 +16,7 @@ const HeroSection = () => {
           <ButtonLink text="View My Projects" href="#about-section" openNewTab="false"/>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

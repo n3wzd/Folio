@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 
-const ParticleBackground = () => {
+const WaveBackground = () => {
     const canvasRef = useRef(null);
     const numParticles = 100;
     const waveAmplitude = 200;
@@ -11,9 +11,14 @@ const ParticleBackground = () => {
       const ctx = canvas.getContext('2d');
       const particles = [];
       let t = 0;
-  
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+
+      const handleResize = () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      };
+      
+      handleResize()
+      window.addEventListener('resize', handleResize);
   
       for (let i = 0; i < numParticles; i++) {
         particles.push({
@@ -51,12 +56,6 @@ const ParticleBackground = () => {
   
       drawAnimation();
   
-      const handleResize = () => {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-      };
-      window.addEventListener('resize', handleResize);
-  
       return () => {
         window.removeEventListener('resize', handleResize);
       };
@@ -65,4 +64,4 @@ const ParticleBackground = () => {
     return <canvas ref={canvasRef} />;
 };
 
-export default ParticleBackground;
+export default WaveBackground;

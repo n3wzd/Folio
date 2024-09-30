@@ -3,7 +3,7 @@ import "../styles/ContactSection.css";
 
 const ContactSection = () => {
   return (
-    <div className="contact-container">
+    <section className="contact-container">
       <div className="social-links">
         <a href="https://github.com/n3wzd" target="_blank" rel="noopener noreferrer">
           <div className="icon-button">
@@ -13,7 +13,7 @@ const ContactSection = () => {
           </div>
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 

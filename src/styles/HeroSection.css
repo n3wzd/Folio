@@ -1,13 +1,5 @@
 @import './Color.css';
 
-html {
-  overflow-x: hidden;
-  width: 100%;
-  margin: 0;
-  scroll-behavior: smooth;
-  background-color: #111;
-}
-
 .hero-container {
   display: grid;
   grid-template-columns: 1fr;

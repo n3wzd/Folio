@@ -6,16 +6,17 @@ const SkillBar = ({ name, gauge }) => {
   const skillBarFillRef = useRef(null);
 
   useEffect(() => {
+    const skillBarFill = skillBarFillRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => setBarWidth(entry.isIntersecting ? gauge * 100 : 0),
       { threshold: 0.1 }
     );
 
-    if (skillBarFillRef.current) {
-      observer.observe(skillBarFillRef.current);
+    if (skillBarFill) {
+      observer.observe(skillBarFill);
     }
 
-    return () => skillBarFillRef.current && observer.unobserve(skillBarFillRef.current);
+    return () => skillBarFill && observer.unobserve(skillBarFill);
   }, [gauge]);
 
   return (

@@ -13,10 +13,11 @@ const ProjectSection = () => {
   const projects = [{
       title: "FlutPlayer",
       description: "음원 재생 안드로이드 & 윈도우 애플리케이션",
-      text: "이 앱은 오디오 재생과 관련된 다양한 기능을 제공합니다. 사용자는 슬라이더를 통해 재생 및 일시 정지, 트랙 이동, 볼륨 조절, 그리고 반복 및 셔플 모드를 설정할 수 있습니다. 태그 관리, 배경 설정, 이퀄라이저 조절 등 커스터마이징이 가능하며, 데이터베이스와 CSV 파일을 통한 설정 저장 및 불러오기를 지원합니다.",
+      text: "이 애플리케이션은 음원 재생 환경에서 사용자의 편의성을 향상시키기 위해 개발되었습니다. 안드로이드와 윈도우 플랫폼에서 일관된 오디오 경험을 제공하며, 태그 관리, 이퀄라이저, 비주얼라이저 등 사용자 맞춤 설정 기능을 포함하고 있습니다. 특히 매시업 모드와 커스텀 백그라운드 기능을 통해 보다 다채로운 재생 경험을 제공합니다.",
       link: "https://github.com/n3wzd/FlutPlayer",
       video: "FlutPlayer-1.mp4",
       imgList: ["FlutPlayer-2.png", "FlutPlayer-3.png", "FlutPlayer-4.png", "FlutPlayer-5.png"],
+      readme: "readme-flutplayer.md",
     }, {
       title: "Writer",
       description: "Markdown 텍스트 실시간 편집기 웹 애플리케이션",
@@ -24,6 +25,7 @@ const ProjectSection = () => {
       link: "https://github.com/n3wzd/Writer",
       video: "Writer-1.mp4",
       imgList: ["Writer-2.png", "Writer-3.png", "Writer-4.png", "Writer-5.png"],
+      readme: "readme-writer.md",
     }, {
       title: "RPG Map Generator",
       description: "무작위 RPG 맵 생성기",
@@ -31,6 +33,7 @@ const ProjectSection = () => {
       link: "https://github.com/n3wzd/RPG-map-generator",
       video: "RPG-map-generator-1.mp4",
       imgList: ["RPG-map-generator-2.png", "RPG-map-generator-3.png", "RPG-map-generator-4.png", "RPG-map-generator-5.png"],
+      readme: "readme-flutplayer.md",
     }, {
       title: "Portfolio 2024",
       description: "포트폴리오 사이트",
@@ -38,6 +41,7 @@ const ProjectSection = () => {
       link: "https://github.com/n3wzd/Folio",
       video: "FlutPlayer-1.mp4",
       imgList: ["FlutPlayer-2.png", "FlutPlayer-3.png", "FlutPlayer-4.png", "FlutPlayer-5.png"],
+      readme: "readme-flutplayer.md",
     }, {
       title: "NETS App",
       description: "Meven+ 병원동행 모빌리티 앱",
@@ -45,13 +49,15 @@ const ProjectSection = () => {
       link: "https://github.com/NETS-mobility",
       video: "NETS-app-1.mp4",
       imgList: ["NETS-app-2.png", "NETS-app-3.png", "NETS-app-4.png", "NETS-app-5.png"],
+      readme: "readme-flutplayer.md",
     }, {
-      title: "백신예방접종",
+      title: "COVID-19 백신접종예약",
       description: "백신 조회 및 예약 웹사이트",
-      text: "백신 접종 완료자 및 접종 현황을 볼 수 있습니다. 접종 현황은 지역별, 연령별로 구분되서 제공됩니다. 회원가입 및 로그인을 진행하면 백신 예약을 할 수 있으며, 마이페이지에서 정보 수정이 가능합니다. 예약번호를 통한 간편 조회가 가능하며, 잔여 백신 및 기관 조회를 할 수 있습니다.",
+      text: "코로나19 백신 접종 완료자 및 접종 현황을 볼 수 있습니다. 접종 현황은 지역별, 연령별로 구분되서 제공됩니다. 회원가입 및 로그인을 진행하면 백신 예약을 할 수 있으며, 마이페이지에서 정보 수정이 가능합니다. 예약번호를 통한 간편 조회가 가능하며, 잔여 백신 및 기관 조회를 할 수 있습니다.",
       link: "https://github.com/2021-2-DB-VACCINATION/vaccination",
       video: "vaccination-1.mp4",
       imgList: ["vaccination-2.png", "vaccination-3.png", "vaccination-4.png", "vaccination-5.png"],
+      readme: "readme-flutplayer.md",
     }
   ];
 
@@ -69,7 +75,7 @@ const ProjectSection = () => {
 
   return (
     <>
-      <div  className="project-section">
+      <section id="project-section" className="project-section">
         <h2 className="project-title">Project</h2>
         <div className="project-center">
           <ArrowButton direction="left" onClick={() => handleButtonClick((pageData.cur - 1 + projects.length) % projects.length)} />
@@ -88,7 +94,7 @@ const ProjectSection = () => {
             <button key={index} onClick={() => handleButtonClick(index)} className={index === pageData.cur ? "selected" : ""}/>
           ))}
         </div>
-      </div>
+      </section>
       {isPopupOpen && (
         <ProjectPopup projectData={projects[pageData.cur]} closePopup={closePopup}/>
       )}

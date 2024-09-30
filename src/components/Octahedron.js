@@ -2,13 +2,13 @@ import React, { useEffect, useRef } from 'react';
 
 const Octahedron = () => {
   const canvasRef = useRef(null);
-  let angle = 0;
 
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
     canvas.width = 200;
     canvas.height = 200;
+    let angle = 0;
 
     const centerX = canvas.width / 2;
     const centerY = canvas.height / 2;
