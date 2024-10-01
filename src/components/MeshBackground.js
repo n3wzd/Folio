@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react';
 
 const MeshAnimation = () => {
     const canvasRef = useRef(null);
-    const numDots = 6;
 
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -25,15 +24,17 @@ const MeshAnimation = () => {
         }
 
         class Dot {
-            constructor() {
-                this.base = new Point(Math.random() * (canvas.width - 100) + 50, Math.random() * (canvas.height - 100) + 50);
-                this.position = new Point(this.base.x + Math.random() * 30, this.base.y + Math.random() * 30);
-                this.speed = new Point(0, 0);
-                this.perspective = Math.random() * 100;
+            constructor(xr, yr, pers) {
+                this.base = new Point(canvas.width * xr, canvas.height * yr);
+                this.position = new Point(this.base.x, this.base.y);
+                this.radius = Math.random() * 20;
+                this.angle = Math.random() * 360;
+                this.angularVelocity = 0.05;
+                this.perspective = pers + (Math.random() - 0.5) * 0.1;
             }
 
             get opacity() {
-                return (1 - this.perspective / 100) * 0.8;
+                return (1 - this.perspective) * 0.8;
             }
 
             get x() {
@@ -47,26 +48,23 @@ const MeshAnimation = () => {
             distance(a, b) {
                 return Math.sqrt((b.x - a.x) ** 2 + (b.y - a.y) ** 2);
             }
-
-            direction(a, b) {
-                return Math.atan2(b.y - a.y, b.x - a.x);
-            }
           
             update() {
-                const dist = this.distance(this.base, this.position);
-                const angle = this.direction(this.base, this.position);
-                const acceleration = new Point(this.base.x - this.position.x, this.base.y - this.position.y);
-
-                const speedFactor = (1 - this.perspective / 100) * 0.001;
-                this.speed.x += acceleration.x * speedFactor;
-                this.speed.y += acceleration.y * speedFactor;
-
-                this.position.x += this.speed.x;
-                this.position.y += this.speed.y;
+                const speedFactor = (1 - this.perspective) * 0.01;
+                this.angle = (this.angle + this.angularVelocity * speedFactor) % 360;
+                this.position.x = this.base.x + this.radius * Math.cos(this.angle * (180 / Math.PI));
+                this.position.y = this.base.y + this.radius * Math.sin(this.angle * (180 / Math.PI));
             }
         }
 
-        const dots = Array.from({ length: numDots }, () => new Dot());
+        const dots = [
+            new Dot(0.57, 0.10, 0.7),
+            new Dot(0.37, 0.60, 0.7),
+            new Dot(0.87, 0.80, 0.7),
+            new Dot(0.90, 0.20, 0.7),
+            new Dot(0.62, 0.30, 0.4),
+            new Dot(0.72, 0.55, 0.9),
+        ];
 
         const animate = () => {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -80,25 +78,32 @@ const MeshAnimation = () => {
                 ctx.closePath();
             });
 
-            drawLines(ctx);
+            drawLines(dots[0], dots[1]);
+            drawLines(dots[1], dots[2]);
+            drawLines(dots[2], dots[3]);
+            drawLines(dots[3], dots[0]);
+            drawLines(dots[0], dots[4]);
+            drawLines(dots[1], dots[4]);
+            drawLines(dots[2], dots[4]);
+            drawLines(dots[3], dots[4]);
+            drawLines(dots[0], dots[5]);
+            drawLines(dots[1], dots[5]);
+            drawLines(dots[2], dots[5]);
+            drawLines(dots[3], dots[5]);
             requestAnimationFrame(animate);
         };
 
-        const drawLines = (ctx) => {
-            for (let i = 0; i < dots.length; i++) {
-                for (let j = i + 1; j < dots.length; j++) {
-                    const gradient = ctx.createLinearGradient(dots[i].x, dots[i].y, dots[j].x, dots[j].y);
-                    gradient.addColorStop(0, `rgba(0, 150, 255, ${dots[i].opacity})`);
-                    gradient.addColorStop(1, `rgba(0, 150, 255, ${dots[j].opacity})`);
+        const drawLines = (A, B) => {
+            const gradient = ctx.createLinearGradient(A.x, A.y, B.x, B.y);
+            gradient.addColorStop(0, `rgba(0, 150, 255, ${A.opacity})`);
+            gradient.addColorStop(1, `rgba(0, 150, 255, ${B.opacity})`);
 
-                    ctx.beginPath();
-                    ctx.moveTo(dots[i].x, dots[i].y);
-                    ctx.lineTo(dots[j].x, dots[j].y);
-                    ctx.strokeStyle = gradient;
-                    ctx.lineWidth = 1;
-                    ctx.stroke();
-                }
-            }
+            ctx.beginPath();
+            ctx.moveTo(A.x, A.y);
+            ctx.lineTo(B.x, B.y);
+            ctx.strokeStyle = gradient;
+            ctx.lineWidth = 1;
+            ctx.stroke();
         };
 
         animate();
