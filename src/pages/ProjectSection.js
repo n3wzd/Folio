@@ -13,7 +13,7 @@ const ProjectSection = () => {
   const projects = [{
       title: "FlutPlayer",
       description: "음원 재생 안드로이드 & 윈도우 애플리케이션",
-      text: "이 애플리케이션은 음원 재생 환경에서 사용자의 편의성을 향상시키기 위해 개발되었습니다. 안드로이드와 윈도우 플랫폼에서 일관된 오디오 경험을 제공하며, 태그 관리, 이퀄라이저, 비주얼라이저 등 사용자 맞춤 설정 기능을 포함하고 있습니다. 특히 매시업 모드와 커스텀 백그라운드 기능을 통해 보다 다채로운 재생 경험을 제공합니다.",
+      text: "FlutPlayer는 음원 재생 환경에서 사용자의 편의성을 향상시키기 위해 개발되었습니다. 안드로이드와 윈도우 플랫폼에서 일관된 오디오 경험을 제공하며, 태그 관리, 이퀄라이저, 비주얼라이저 등 사용자 맞춤 설정 기능을 포함하고 있습니다. 매시업 모드와 커스텀 백그라운드 기능을 통해 보다 다채로운 재생 경험을 제공합니다.",
       link: "https://github.com/n3wzd/FlutPlayer",
       video: "FlutPlayer-1.mp4",
       imgList: ["FlutPlayer-2.png", "FlutPlayer-3.png", "FlutPlayer-4.png", "FlutPlayer-5.png"],

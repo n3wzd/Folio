@@ -35,7 +35,7 @@ const ProjectPopup = ({ projectData, closePopup }) => {
                 <span className="close-btn" onClick={closePopup}>×</span>
                 <div className="tabs">
                     <button className={`tab ${activeTab === 'page1' ? 'active' : ''}`} onClick={() => setActiveTab('page1')}>INTRO</button>
-                    <button className={`tab ${activeTab === 'page2' ? 'active' : ''}`} onClick={() => setActiveTab('page2')}>DETAIL</button>
+                    <button className={`tab ${activeTab === 'page2' ? 'active' : ''}`} onClick={() => setActiveTab('page2')}>README</button>
                 </div>
                 <div className="content">
                     {activeTab === 'page1' && <ProjectPopupPage1 projectData={projectData}/>}
