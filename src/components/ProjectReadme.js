@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
+import "../styles/ProjectReadme.css";
 
 function ProjectReadme({ fileName }) {
   const [content, setContent] = useState("");
