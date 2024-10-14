@@ -44,12 +44,12 @@ const ProjectSection = () => {
       readme: "readme-folio.md",
     }, {
       title: "NETS App",
-      description: "Meven+ 병원동행 모빌리티 앱",
-      text: "고객용 앱, 매니저용 앱, 관리자용 웹 3가지가 있습니다.",
+      description: "비응급 병원동행 모빌리티 앱 서비스",
+      text: "사회적으로 요양 서비스에 대한 수요가 증가하면서 병원 동행 서비스가 새롭게 떠오르고 있습니다. 만약 병원 동행과 모빌리티가 결합되면 편리함, 접근성이 높아질 것입니다. 이 프로젝트는 웹으로 제공되고 있는 병원 동행 서비스인 고위드유에 모빌리티 서비스가 추가된 네츠 모빌리티 앱을 개발하는 것이 목표입니다.",
       link: "https://github.com/NETS-mobility",
       video: "NETS-app-1.mp4",
       imgList: ["NETS-app-2.png", "NETS-app-3.png", "NETS-app-4.png", "NETS-app-5.png"],
-      readme: "readme-flutplayer.md",
+      readme: "readme-NETS-app.md",
     }, {
       title: "COVID-19 백신접종예약",
       description: "백신 조회 및 예약 웹사이트",
@@ -57,7 +57,7 @@ const ProjectSection = () => {
       link: "https://github.com/2021-2-DB-VACCINATION/vaccination",
       video: "vaccination-1.mp4",
       imgList: ["vaccination-2.png", "vaccination-3.png", "vaccination-4.png", "vaccination-5.png"],
-      readme: "readme-flutplayer.md",
+      readme: "readme-vaccination.md",
     }
   ];
 
