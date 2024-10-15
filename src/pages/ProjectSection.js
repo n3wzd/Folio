@@ -21,7 +21,7 @@ const ProjectSection = () => {
     }, {
       title: "Writer",
       description: "Markdown 텍스트 실시간 편집기 웹 애플리케이션",
-      text: "Markdown 텍스트를 작성하고 실시간으로 편집할 수 있으며, 여러 텍스트 파일을 생성하고 저장할 수 있습니다. 또한, 파일의 이름을 변경하거나 삭제할 수 있는 기능도 제공합니다. 작성한 파일은 MD 또는 HTML 형식으로 저장할 수 있으며, 기존의 MD 및 TEXT 파일을 불러오는 것도 가능합니다.",
+      text: "Writer는 실시간으로 Markdown 텍스트를 편집하고 HTML 형식으로 변환할 수 있는 편리한 텍스트 편집기입니다. 사용자가 작성하는 동안 Markdown 패턴이 실시간으로 분석되고 UI에 반영되어 더 효율적인 작업이 가능합니다. 또한, 파일 생성, 이름 변경, 삭제 등 문서 및 폴더 관리 기능을 제공하며, 작성된 텍스트는 MD 또는 HTML 형식으로 저장할 수 있습니다.",
       link: "https://github.com/n3wzd/Writer",
       video: "Writer-1.mp4",
       imgList: ["Writer-2.png", "Writer-3.png", "Writer-4.png", "Writer-5.png"],
@@ -43,7 +43,7 @@ const ProjectSection = () => {
       imgList: ["Folio-2.png", "Folio-3.png", "Folio-4.png", "Folio-5.png"],
       readme: "readme-folio.md",
     }, {
-      title: "NETS App",
+      title: "NETS-Mobility",
       description: "비응급 병원동행 모빌리티 앱 서비스",
       text: "사회적으로 요양 서비스에 대한 수요가 증가하면서 병원 동행 서비스가 새롭게 떠오르고 있습니다. 만약 병원 동행과 모빌리티가 결합되면 편리함, 접근성이 높아질 것입니다. 이 프로젝트는 웹으로 제공되고 있는 병원 동행 서비스인 고위드유에 모빌리티 서비스가 추가된 네츠 모빌리티 앱을 개발하는 것이 목표입니다.",
       link: "https://github.com/NETS-mobility",
