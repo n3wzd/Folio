@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Folio/static/css/main.94484afd.css",
-    "main.js": "/Folio/static/js/main.fdc59db1.js",
+    "main.js": "/Folio/static/js/main.28d22b70.js",
     "index.html": "/Folio/index.html",
     "main.94484afd.css.map": "/Folio/static/css/main.94484afd.css.map",
-    "main.fdc59db1.js.map": "/Folio/static/js/main.fdc59db1.js.map"
+    "main.28d22b70.js.map": "/Folio/static/js/main.28d22b70.js.map"
   },
   "entrypoints": [
     "static/css/main.94484afd.css",
-    "static/js/main.fdc59db1.js"
+    "static/js/main.28d22b70.js"
   ]
 }
