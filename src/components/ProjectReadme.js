@@ -4,7 +4,7 @@ import "../styles/ProjectReadme.css";
 
 function ProjectReadme({ path }) {
   const [content, setContent] = useState("");
-
+  
   useEffect(() => {
     fetch(path)
       .then((response) => response.text())

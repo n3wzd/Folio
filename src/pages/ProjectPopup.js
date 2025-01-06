@@ -21,7 +21,7 @@ const ProjectPopupPage1 = ({ projectData }) => {
 
 const ProjectPopupPage2 = ({ projectData }) => {
     return (
-        <ProjectReadme fileName={projectData.readme} />
+        <ProjectReadme path={projectData.readme} />
     )
 }
 
@@ -29,10 +29,12 @@ const ProjectPopup = ({ projectData, closePopup }) => {
     const [activeTab, setActiveTab] = useState('page1');
     const overlayRef = useRef(null);
     const popupRef = useRef(null);
+    const contentRef = useRef(null);
 
     useEffect(() => {
         const overlay = overlayRef.current;
         const popup = popupRef.current;
+        const content = contentRef.current;
     
         const handleOuterWheel = (event) => {
             event.stopPropagation();
@@ -40,7 +42,9 @@ const ProjectPopup = ({ projectData, closePopup }) => {
         };
         const handleInnerWheel = (event) => {
             event.stopPropagation();
-            if(activeTab === 'page1') {
+            const isAtTop = content.scrollTop === 0;
+            const isAtBottom = content.scrollTop === content.scrollHeight - content.clientHeight;
+            if (activeTab === 'page1' || (isAtTop && event.deltaY < 0) || (isAtBottom && event.deltaY > 0)) {
                 event.preventDefault();
             }
         };
@@ -71,7 +75,7 @@ const ProjectPopup = ({ projectData, closePopup }) => {
                     <button className={`tab ${activeTab === 'page1' ? 'active' : ''}`} onClick={() => setActiveTab('page1')}>INTRO</button>
                     <button className={`tab ${activeTab === 'page2' ? 'active' : ''}`} onClick={() => setActiveTab('page2')}>README</button>
                 </div>
-                <div className="content">
+                <div className="content" ref={contentRef}>
                     {activeTab === 'page1' && <ProjectPopupPage1 projectData={projectData}/>}
                     {activeTab === 'page2' && <ProjectPopupPage2 projectData={projectData}/>}
                 </div>
