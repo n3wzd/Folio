@@ -29,8 +29,8 @@ const ImageSlideMenu = ({ imgList, firstIndex=0 }) => {
         <div className="image-slide-container">
             <ArrowButton direction="left" onClick={slideRight} />
             <div className="image-slide-menu">
-                <img alt={`${imgList[indexData.cur]}`} src={imgList[indexData.cur]} className={animate ? (indexData.direction === "left" ? "cur-left-animate" : "cur-right-animate") : ""} />
-                <img alt={`${imgList[indexData.prev]}`} src={imgList[indexData.prev]} className={animate ? (indexData.direction === "left" ? "prev-left-animate" : "prev-right-animate") : ""} />
+                <img alt={imgList[indexData.cur]} src={imgList[indexData.cur]} className={animate ? (indexData.direction === "left" ? "cur-left-animate" : "cur-right-animate") : ""} />
+                <img alt={imgList[indexData.prev]} src={imgList[indexData.prev]} className={animate ? (indexData.direction === "left" ? "prev-left-animate" : "prev-right-animate") : ""} />
             </div>
             <ArrowButton direction="right" onClick={slideLeft} />
         </div>

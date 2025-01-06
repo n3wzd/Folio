@@ -20,7 +20,7 @@ const ProjectSection = () => {
       link: "https://github.com/n3wzd/FlutPlayer",
       video: `${publicPath}/FlutPlayer-1.mp4`,
       imgList: createImgListPath("FlutPlayer"),
-      readme: `${publicPath}/readme-flutplayer.md`,
+      readme: `${publicPath}/text/readme-flutplayer.md`,
     }, {
       title: "Writer",
       description: "Markdown 텍스트 실시간 편집기 웹 애플리케이션",
@@ -28,7 +28,7 @@ const ProjectSection = () => {
       link: "https://github.com/n3wzd/Writer",
       video: `${publicPath}/Writer-1.mp4`,
       imgList: createImgListPath("Writer"),
-      readme: `${publicPath}/readme-writer.md`,
+      readme: `${publicPath}/text/readme-writer.md`,
     }, {
       title: "RPG Map Generator",
       description: "무작위 RPG 맵 생성기",
@@ -36,7 +36,7 @@ const ProjectSection = () => {
       link: "https://github.com/n3wzd/RPG-map-generator",
       video: `${publicPath}/RPG-map-generator-1.mp4`,
       imgList: createImgListPath("RPG-map-generator"),
-      readme: `${publicPath}/readme-RPG-map-generator.md`,
+      readme: `${publicPath}/text/readme-RPG-map-generator.md`,
     }, {
       title: "Portfolio 2024",
       description: "포트폴리오 웹 사이트",
@@ -44,7 +44,7 @@ const ProjectSection = () => {
       link: "https://github.com/n3wzd/Folio",
       video: `${publicPath}/Folio-1.mp4`,
       imgList: createImgListPath("Folio"),
-      readme: `${publicPath}/readme-folio.md`,
+      readme: `${publicPath}/text/readme-folio.md`,
     }, {
       title: "NETS-Mobility",
       description: "비응급 병원동행 모빌리티 앱 서비스",
@@ -52,7 +52,7 @@ const ProjectSection = () => {
       link: "https://github.com/NETS-mobility",
       video: `${publicPath}/NETS-app-1.mp4`,
       imgList: createImgListPath("NETS-app"),
-      readme: `${publicPath}/readme-NETS-app.md`,
+      readme: `${publicPath}/text/readme-NETS-app.md`,
     }, {
       title: "COVID-19 백신접종예약",
       description: "백신 조회 및 예약 웹사이트",
@@ -60,7 +60,7 @@ const ProjectSection = () => {
       link: "https://github.com/2021-2-DB-VACCINATION/vaccination",
       video: `${publicPath}/vaccination-1.mp4`,
       imgList: createImgListPath("vaccination"),
-      readme: `${publicPath}/readme-vaccination.md`,
+      readme: `${publicPath}/text/readme-vaccination.md`,
     }
   ];
 
