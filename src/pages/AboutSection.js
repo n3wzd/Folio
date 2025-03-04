@@ -1,8 +1,8 @@
 import React from "react";
-import Profile from "../components/Profile.js";
-import StrengthMenu from "../components/StrengthMenu.js";
-import SkillMenu from "../components/SkillMenu.js";
-import MeshBackground from "../components/MeshBackground.js";
+import Profile from "../components/menu/Profile.js";
+import StrengthMenu from "../components/menu/StrengthMenu.js";
+import SkillMenu from "../components/menu/SkillMenu.js";
+import MeshBackground from "../components/background/Mesh.js";
 import "../styles/AboutSection.css";
 
 const AboutSection = () => {

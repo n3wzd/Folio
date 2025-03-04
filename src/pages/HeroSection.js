@@ -1,6 +1,6 @@
 import React from "react";
-import ButtonLink from  "../components/ButtonLink.js";
-import WaveBackground from "../components/WaveBackground.js";
+import ButtonLink from  "../components/common/ButtonLink.js";
+import WaveBackground from "../components/background/Wave.js";
 import "../styles/HeroSection.css";
 
 const HeroSection = () => {

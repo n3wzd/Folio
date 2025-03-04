@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import ArrowButton from "../components/ArrowButton.js";
-import "../styles/ImageSlideMenu.css";
+import ArrowButton from "../common/ArrowButton.js";
+import "../../styles/ImageSlideMenu.css";
 
-const ImageSlideMenu = ({ imgList, firstIndex=0 }) => {
+export default ({ imgList, firstIndex=0 }) => {
     const [indexData, setIndexData] = useState({cur: firstIndex, prev: firstIndex, direction: 'none'});
     const [animate, setAnimate] = useState(false);
 
@@ -37,5 +37,3 @@ const ImageSlideMenu = ({ imgList, firstIndex=0 }) => {
         
     );
 };
-
-export default ImageSlideMenu;

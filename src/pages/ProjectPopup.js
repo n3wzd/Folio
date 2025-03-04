@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import ButtonLink from  "../components/ButtonLink.js";
-import ImageSlideMenu from  "../components/ImageSlideMenu.js";
-import ProjectReadme from  "../components/ProjectReadme.js";
+import ButtonLink from  "../components/common/ButtonLink.js";
+import ImageSlideMenu from  "../components/menu/ImageSlideMenu.js";
+import ProjectReadme from  "../components/menu/ProjectReadme.js";
 import "../styles/ProjectPopup.css";
 
 const ProjectPopupPage1 = ({ projectData }) => {

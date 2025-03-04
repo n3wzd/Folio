@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 
-const WaveBackground = () => {
+const Wave = () => {
     const canvasRef = useRef(null);
     const numParticles = 100;
     const waveAmplitude = 200;
@@ -64,4 +64,4 @@ const WaveBackground = () => {
     return <canvas ref={canvasRef} />;
 };
 
-export default WaveBackground;
+export default Wave;

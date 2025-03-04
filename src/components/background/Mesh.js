@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-const MeshAnimation = () => {
+const Mesh = () => {
     const canvasRef = useRef(null);
 
     useEffect(() => {
@@ -116,4 +116,4 @@ const MeshAnimation = () => {
     return <canvas ref={canvasRef} />;
 };
 
-export default MeshAnimation;
+export default Mesh;

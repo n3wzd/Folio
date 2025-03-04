@@ -1,6 +1,6 @@
 import React from "react";
 import SkillBar from "./SkillBar.js";
-import "../styles/Skill.css";
+import "../../styles/Skill.css";
 
 function makeItem(name, gauge) {
   return {name: name, gauge: gauge};

@@ -1,6 +1,6 @@
 import React from "react";
-import Octahedron from "../components/Octahedron.js";
-import "../styles/Strength.css";
+import Octahedron from "../background/Octahedron.js";
+import "../../styles/Strength.css";
 
 const Strength = ({ title, text }) => {
   return (

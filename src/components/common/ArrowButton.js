@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/ArrowButton.css";
+import "../../styles/ArrowButton.css";
 
 const ArrowButton = ({direction, onClick}) => {
   return (

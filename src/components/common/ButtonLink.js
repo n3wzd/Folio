@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/ButtonLink.css";
+import "../../styles/ButtonLink.css";
 
 const ButtonLink = ({text, href, openNewTab="true" }) => {
   return (

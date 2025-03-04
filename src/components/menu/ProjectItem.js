@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/ProjectSection.css";
+import "../../styles/ProjectSection.css";
 
 const ProjectItem = ({projectData, onClick}) => {
   return (

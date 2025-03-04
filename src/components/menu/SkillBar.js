@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect }  from "react";
-import "../styles/Skill.css";
+import "../../styles/Skill.css";
 
 const SkillBar = ({ name, gauge }) => {
   const [barWidth, setBarWidth] = useState(0);

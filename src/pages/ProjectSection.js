@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ProjectItem from "../components/ProjectItem.js";
-import ArrowButton from "../components/ArrowButton.js";
+import ProjectItem from "../components/menu/ProjectItem.js";
+import ArrowButton from "../components/common/ArrowButton.js";
 import ProjectPopup from "./ProjectPopup.js";
 import "../styles/ProjectSection.css";
 
@@ -14,6 +14,14 @@ const ProjectSection = () => {
   const createImgListPath = (name) => Array.from({ length: 4 }, (_, i) => `${publicPath}/${name}-${i + 2}.png`)
 
   const projects = [{
+      title: "LocaQuest",
+      description: "실시간 대규모 트래픽 처리 Gamification 위치 서비스",
+      text: "LocaQuest는 실시간 위치 기반 서비스를 제공하며, Redis와 Kafka를 활용한 대규모 트래픽 처리 및 실시간 데이터 분석을 통해 사용자에게 경험치, 레벨, 도전 과제 등 게임화된 요소를 제공하고, 마이크로서비스 아키텍처로 높은 성능을 구현하는 위치 기반 게임화 플랫폼입니다.",
+      link: "https://github.com/n3wzd/LocaQuest-Frontend",
+      video: `${publicPath}/LocaQuest-1.mp4`,
+      imgList: createImgListPath("LocaQuest"),
+      readme: `${publicPath}/text/readme-locaquest.md`,
+    }, {
       title: "FlutPlayer",
       description: "음원 재생 안드로이드 & 윈도우 애플리케이션",
       text: "FlutPlayer는 음원 재생 환경에서 사용자의 편의성을 향상시키기 위해 개발되었습니다. 안드로이드와 윈도우 플랫폼에서 일관된 오디오 경험을 제공하며, 태그 관리, 이퀄라이저, 비주얼라이저 등 사용자 맞춤 설정 기능을 포함하고 있습니다. 매시업 모드와 커스텀 백그라운드 기능을 통해 보다 다채로운 재생 경험을 제공합니다.",
@@ -38,7 +46,7 @@ const ProjectSection = () => {
       imgList: createImgListPath("RPG-map-generator"),
       readme: `${publicPath}/text/readme-RPG-map-generator.md`,
     }, {
-      title: "Portfolio 2024",
+      title: "Portfolio",
       description: "포트폴리오 웹 사이트",
       text: "개발 프로젝트를 소개하는 포트폴리오 웹 사이트입니다. 웹 사이트를 직접 제작하는 과정을 통해 더 깊이 있는 경험을 얻고자 하는 목표에서 시작되었습니다. 제 기술과 아이디어를 직접 구현함으로써, 더 나만의 스타일을 강조하고, 직접 만든 사이트를 통해 웹 개발에 대한 이해도를 높이며, 미래 프로젝트에서도 더 나은 결과물을 만들 수 있는 기반을 다지고자 했습니다.",
       link: "https://github.com/n3wzd/Folio",

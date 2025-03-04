@@ -1,6 +1,6 @@
 import React from "react";
 import Strength from "./Strength.js";
-import "../styles/Skill.css";
+import "../../styles/Skill.css";
 
 function makeItem(title, text) {
   return {title: title, text: text};

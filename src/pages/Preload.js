@@ -4,7 +4,7 @@ const createPreloadFile = (name) =>
     [`${process.env.PUBLIC_URL}/${name}-1.mp4`,
         ...[2, 3, 4, 5].map(i => `${process.env.PUBLIC_URL}/${name}-${i}.png`)];
 const createPreloadFiles = (nameList) => [].concat(...nameList.map(createPreloadFile));
-const preloadFiles = createPreloadFiles(["FlutPlayer", "Writer", "RPG-map-generator", "Folio", "NETS-app", "vaccination"]);
+const preloadFiles = createPreloadFiles(["LocaQuest", "FlutPlayer", "Writer", "RPG-map-generator", "Folio", "NETS-app", "vaccination"]);
 
 const PreloadResources = () => {
   useEffect(() => {

@@ -1,6 +1,6 @@
 import React from "react";
-import Cube from "../components/Cube.js";
-import "../styles/Profile.css";
+import Cube from "../background/Cube.js";
+import "../../styles/Profile.css";
 
 const Profile = () => {
   return (
