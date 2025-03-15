@@ -24,7 +24,7 @@ const ProjectSection = () => {
     }, {
       title: "FlutPlayer",
       description: "음원 재생 안드로이드 & 윈도우 애플리케이션",
-      text: "FlutPlayer는 음원 재생 환경에서 사용자의 편의성을 향상시키기 위해 개발되었습니다. 안드로이드와 윈도우 플랫폼에서 일관된 오디오 경험을 제공하며, 태그 관리, 이퀄라이저, 비주얼라이저 등 사용자 맞춤 설정 기능을 포함하고 있습니다. 매시업 모드와 커스텀 백그라운드 기능을 통해 보다 다채로운 재생 경험을 제공합니다.",
+      text: "FlutPlayer는 Android, Windows 크로스플랫폼 오디오 플레이어 애플리케이션입니다. 태그 관리, 이퀄라이저, 비주얼라이저, 매시업 모드, 커스텀 백그라운드 등 다양한 기능으로 사용자가 원하는대로 커스터마이즈할 수 있습니다.",
       link: "https://github.com/n3wzd/FlutPlayer",
       video: `${publicPath}/FlutPlayer-1.mp4`,
       imgList: createImgListPath("FlutPlayer"),
@@ -32,7 +32,7 @@ const ProjectSection = () => {
     }, {
       title: "Writer",
       description: "Markdown 텍스트 실시간 편집기 웹 애플리케이션",
-      text: "Writer는 실시간으로 Markdown 텍스트를 편집하고 HTML 형식으로 변환할 수 있는 편리한 텍스트 편집기입니다. 사용자가 작성하는 동안 Markdown 패턴이 실시간으로 분석되고 UI에 반영되어 더 효율적인 작업이 가능합니다. 또한, 파일 생성, 이름 변경, 삭제 등 문서 및 폴더 관리 기능을 제공하며, 작성된 텍스트는 MD 또는 HTML 형식으로 저장할 수 있습니다.",
+      text: "Writer는 실시간으로 Markdown 텍스트를 편집하고 HTML 형식으로 렌더링하는 텍스트 편집기입니다. 파일 생성, 이름 변경, 삭제 등 문서 및 폴더 관리 기능을 제공하며, 작성된 텍스트는 MD 또는 HTML 형식으로 저장할 수 있습니다.",
       link: "https://github.com/n3wzd/Writer",
       video: `${publicPath}/Writer-1.mp4`,
       imgList: createImgListPath("Writer"),
@@ -40,7 +40,7 @@ const ProjectSection = () => {
     }, {
       title: "RPG Map Generator",
       description: "무작위 RPG 맵 생성기",
-      text: "RPG Map Generator는 무작위 RPG 세계를 생성하는 도구입니다. 던전, 동굴, 경로, 자연 등의 맵 생성 방식을 제공합니다. 선택한 타일 테마에 따라 구역 타일과 장식 타일을 랜덤하게 배치하여 매번 새롭고 독특한 맵을 제공합니다. 생성된 맵은 이미지나 json 파일로 추출하여 자신만의 맵으로 활용할 수 있습니다.",
+      text: "RPG Map Generator는 무작위 RPG 세계를 생성하는 도구입니다. 던전, 동굴, 경로, 자연 등의 맵 생성 방식을 제공합니다. 생성된 맵은 이미지나 json 파일로 추출하여 자신만의 맵으로 활용할 수 있습니다.",
       link: "https://github.com/n3wzd/RPG-map-generator",
       video: `${publicPath}/RPG-map-generator-1.mp4`,
       imgList: createImgListPath("RPG-map-generator"),
@@ -48,7 +48,7 @@ const ProjectSection = () => {
     }, {
       title: "Portfolio",
       description: "포트폴리오 웹 사이트",
-      text: "개발 프로젝트를 소개하는 포트폴리오 웹 사이트입니다. 웹 사이트를 직접 제작하는 과정을 통해 더 깊이 있는 경험을 얻고자 하는 목표에서 시작되었습니다. 제 기술과 아이디어를 직접 구현함으로써, 더 나만의 스타일을 강조하고, 직접 만든 사이트를 통해 웹 개발에 대한 이해도를 높이며, 미래 프로젝트에서도 더 나은 결과물을 만들 수 있는 기반을 다지고자 했습니다.",
+      text: "개발 프로젝트를 소개하는 포트폴리오 웹 사이트입니다. 기술과 아이디어를 표현하는 것에 중점을 두었습니다.",
       link: "https://github.com/n3wzd/Folio",
       video: `${publicPath}/Folio-1.mp4`,
       imgList: createImgListPath("Folio"),
@@ -56,7 +56,7 @@ const ProjectSection = () => {
     }, {
       title: "NETS-Mobility",
       description: "비응급 병원동행 모빌리티 앱 서비스",
-      text: "사회적으로 요양 서비스에 대한 수요가 증가하면서 병원 동행 서비스가 새롭게 떠오르고 있습니다. 만약 병원 동행과 모빌리티가 결합되면 편리함, 접근성이 높아질 것입니다. 이 프로젝트는 웹으로 제공되고 있는 병원 동행 서비스인 고위드유에 모빌리티 서비스가 추가된 네츠 모빌리티 앱을 개발하는 것이 목표입니다.",
+      text: "사회적으로 요양 서비스에 대한 수요가 증가하면서 병원 동행 서비스가 새롭게 떠오르고 있습니다. 이 프로젝트는 병원 동행 서비스와 모빌리티 서비스가 결합된 네츠 모빌리티 애플리케이션입니다.",
       link: "https://github.com/NETS-mobility",
       video: `${publicPath}/NETS-app-1.mp4`,
       imgList: createImgListPath("NETS-app"),
@@ -64,7 +64,7 @@ const ProjectSection = () => {
     }, {
       title: "COVID-19 백신접종예약",
       description: "백신 조회 및 예약 웹사이트",
-      text: "코로나19 백신 접종 완료자 및 접종 현황을 볼 수 있습니다. 접종 현황은 지역별, 연령별로 구분되서 제공됩니다. 회원가입 및 로그인을 진행하면 백신 예약을 할 수 있으며, 마이페이지에서 정보 수정이 가능합니다. 예약번호를 통한 간편 조회가 가능하며, 잔여 백신 및 기관 조회를 할 수 있습니다.",
+      text: "백신 접종 예약 프로젝트는 사용자 주소를 기반으로 병원과 잔여 백신 정보를 제공하여 접근성을 향상하는 것을 목적으로 합니다. 또한, 코로나19 백신 접종 완료자 및 접종 현황 등 팬데믹 상황에서 유용한 정보를 제공합니다.",
       link: "https://github.com/2021-2-DB-VACCINATION/vaccination",
       video: `${publicPath}/vaccination-1.mp4`,
       imgList: createImgListPath("vaccination"),
